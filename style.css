@@ -40,6 +40,8 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   border-radius: 1rem;
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 73, 77, 0.1);
+          box-shadow: 20px 20px 20px rgba(0, 73, 77, 0.1);
 }
 
 .calculator-inputs {
