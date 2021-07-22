@@ -64,7 +64,7 @@ function output() {
         let totalPerPerson = (billTotal / pplNum ) + tipPerPerson
 
         totalOutput.innerHTML = '$' + totalPerPerson.toFixed(2)
-        tipAmountOutput.innerHTML = animateValue(tipAmountOutput, tipPerPerson)
+        tipAmountOutput.innerHTML = tipPerPerson < 50 ? animateValue(tipAmountOutput, tipPerPerson) : '$' + tipPerPerson.toFixed(2)
         reset.classList.add('ready')
     }
 }
